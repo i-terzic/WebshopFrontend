@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #14213d;
+}
+
+footer {
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer div p span a {
+    color: white;
+}
+
+.header-img {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-img img {
+    height: auto;
+    width: 100%;
+}
+
+header h1 {
+    text-align: left;
+}
+
+main .limiter h1 {
+    text-align: left;
+}
+
+nav {
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0.4em 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+    color: black;
+    margin: 0.2em;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-teaser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.product-teaser img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-teaser div {
+    position: absolute;
+    color: white;
+    size: 4em;
+    background-color: rgba(148, 148, 148, 0.8);
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.limiter h1 {
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+
+.limiter h2 {
+    padding: 1rem 0;
+    color: white;
+    /*
+    added for javascript labor
+    */
+}
+
+.product-single {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-single img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-single div {
+    position: absolute;
+    color: white;
+    size: 4em;
+    background-color: rgba(148, 148, 148, 0.8);
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.contact-data {
+    color: white;
+    border: white 2px solid;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+/*Ab hier CSS für das JavaScript Labor*/
+.single-product-limiter > h1,
+.single-product-limiter > h2 {
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 20px;
+}
+.single-product-limiter .single-img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.single-product-limiter .single-img img {
+    align-self: center;
+
+    /*max width eingeführt um ein "riesiges" img zu vermeiden, 
+    v.A. bei den Hosen da diese im Portrait format sind*/
+    width: 100%;
+    max-width: 600px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.single-product-limiter .price-line p {
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    padding: 0.5em 20px;
+    text-align: right;
+    margin-bottom: 3em;
+}
+
+.limiter > .place-holder {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.place-holder {
+    margin: 20%;
+    align-self: center;
+}
+
+/*Bis hier CSS für das JavaScript Labor*/
+
+@media only screen and (min-width: 400px) {
+    .limiter {
+        max-width: 1200px;
+        margin: 0 auto 1em auto;
+    }
+
+    header .header-img {
+        height: 150px;
+        width: 150px;
+        float: left;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .logo-img {
+        margin: 10px 0 0 10px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    header .limiter h1 {
+        font-size: 300%;
+        text-align: left;
+        height: 100px;
+        margin-left: 120px;
+        padding: 50px 0 0 50px;
+    }
+
+    header nav ul {
+        display: inline-block;
+    }
+
+    header nav ul li {
+        float: left;
+    }
+
+    header nav {
+        text-align: right;
+    }
+
+    header {
+        background-image: url("images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main .limiter > div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        min-width: 300px;
+        flex-basis: 30%;
+    }
+
+    main .limiter div > div {
+        flex-grow: 1;
+        min-width: 200px;
+        flex-basis: 30%;
+        flex-grow: 1;
+        align-self: center;
+    }
+
+    main .limiter {
+        padding-bottom: 5%;
+    }
+
+    .product-holder {
+        background-color: white;
+        /*
+        This code is necessary in order to preserve stretching the
+        images and to guarantee a better lock of the images.
+        */
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.5em;
+        background-color: #14213d;
+    }
+
+    header nav li:hover {
+        background-color: rgb(252, 252, 252);
+        transition: 0.3s ease;
+        color: #9d3be1;
+        cursor: pointer;
+    }
+
+    header nav li {
+        background-color: rgba(148, 148, 148, 0.8);
+        transition: 0.3s ease;
+    }
+
+    main .limiter div:hover > div {
+        background-color: rgba(194, 194, 194, 0.8);
+        cursor: pointer;
+    }
+
+    .product-single,
+    .product-teaser {
+        overflow: hidden;
+    }
+
+    .product-teaser:hover img {
+        transform: scale(1.05);
+    }
+
+    .product-single:hover img {
+        transform: scale(1.05);
+    }
+
+    .product-teaser img,
+    .product-single img {
+        transition: transform 0.3s ease;
+    }
+}
