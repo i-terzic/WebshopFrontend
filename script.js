@@ -2,251 +2,261 @@
 
 window.addEventListener("load", () => {
     const page = {
-        categories: [
-            { id: "jackets", name: "Jackets", imgUrl: "images/jackets01.jpg" },
-            { id: "shirts", name: "Shirts", imgUrl: "images/shirts01.jpg" },
-            {
-                id: "trousers",
-                name: "Trousers",
-                imgUrl: "images/trousers01.jpg",
-            },
-            { id: "shoes", name: "Shoes", imgUrl: "images/shoes01.jpg" },
-            { id: "hats", name: "Hats", imgUrl: "images/hats01.jpg" },
-        ],
-        jackets: [
-            {
-                id: "jackets01",
-                name: "Green Jacket",
-                imgUrl: "images/jackets01.jpg",
-                description: "A green jacket woven from the finest yarns",
-                price: 199,
-            },
-            {
-                id: "jackets02",
-                name: "Black Jacket",
-                imgUrl: "images/jackets02.jpg",
-                description: "A black jacket woven from the finest yarns",
-                price: 199,
-            },
-            {
-                id: "jackets03",
-                name: "Red Jacket",
-                imgUrl: "images/jackets03.jpg",
-                description: "A red jacket woven from the finest yarns",
-                price: 199,
-            },
-            {
-                id: "jackets04",
-                name: "Mountain Jacket",
-                imgUrl: "images/jackets04.jpg",
-                description: "A mountain jacket woven from the finest yarns",
-                price: 199,
-            },
-            {
-                id: "jackets05",
-                name: "Forest Jacket",
-                imgUrl: "images/jackets05.jpg",
-                description: "A forest jacket woven from the finest yarns",
-                price: 199,
-            },
-            {
-                id: "jackets06",
-                name: "Stone Jacket",
-                imgUrl: "images/jackets06.jpg",
-                description: "A stone jacket woven from the finest yarns",
-                price: 199,
-            },
-        ],
-        shirts: [
-            {
-                id: "shirts01",
-                name: "Black Shirt",
-                imgUrl: "images/shirts01.jpg",
-                description: "A black shirt woven from the finest yarns",
-                price: 49,
-            },
-            {
-                id: "shirts02",
-                name: "Grey Shirt",
-                imgUrl: "images/shirts02.jpg",
-                description: "A grey shirt woven from the finest yarns",
-                price: 49,
-            },
-            {
-                id: "shirts03",
-                name: "Dark Blue Shirt",
-                imgUrl: "images/shirts03.jpg",
-                description: "A darkblue shirt woven from the finest yarns",
-                price: 49,
-            },
-            {
-                id: "shirts04",
-                name: "White Shirt",
-                imgUrl: "images/shirts04.jpg",
-                description: "A white shirt woven from the finest yarns",
-                price: 49,
-            },
-            {
-                id: "shirts05",
-                name: "Dark Blue Shirt",
-                imgUrl: "images/shirts05.jpg",
-                description: "A dark blue shirt woven from the finest yarns",
-                price: 49,
-            },
-            {
-                id: "shirts06",
-                name: "Yellow Shirt",
-                imgUrl: "images/shirts06.jpg",
-                description: "A yellow shirt woven from the finest yarns",
-                price: 49,
-            },
-        ],
-        hats: [
-            {
-                id: "hats01",
-                name: "Darkblue Hat",
-                imgUrl: "images/hats01.jpg",
-                description: "A cool lookin' darkblue cap",
-                price: 19,
-            },
-            {
-                id: "hats02",
-                name: "Red & White Hat",
-                imgUrl: "images/hats02.jpg",
-                description: "A cool lookin' red & white cap",
-                price: 19,
-            },
-            {
-                id: "hats03",
-                name: "Purple & White Hat",
-                imgUrl: "images/hats03.jpg",
-                description: "A cool lookin' purple & white cap",
-                price: 19,
-            },
-            {
-                id: "hats04",
-                name: "Camouflage Hat",
-                imgUrl: "images/hats04.jpg",
-                description: "A cool lookin' camouflage cap",
-                price: 19,
-            },
-            {
-                id: "hats05",
-                name: "Black Hat",
-                imgUrl: "images/hats05.jpg",
-                description: "A cool lookin' black cap",
-                price: 19,
-            },
-            {
-                id: "hats06",
-                name: "Alternative Black Hat",
-                imgUrl: "images/hats06.jpg",
-                description: "A cool lookin' alternative black cap",
-                price: 19,
-            },
-        ],
-
-        trousers: [
-            {
-                id: "trousers01",
-                name: "Black Trousers",
-                imgUrl: "images/trousers01.jpg",
-                description: "Comfortable black jogging-trousers",
-                price: 99,
-            },
-            {
-                id: "trousers02",
-                name: "Beige Trousers",
-                imgUrl: "images/trousers02.jpg",
-                description: "Comfortable beige jogging-trousers",
-                price: 99,
-            },
-            {
-                id: "trousers03",
-                name: "Brown Trousers",
-                imgUrl: "images/trousers03.jpg",
-                description: "Comfortable brown jogging-trousers",
-                price: 99,
-            },
-            {
-                id: "trousers04",
-                name: "Red Trousers",
-                imgUrl: "images/trousers04.jpg",
-                description: "Comfortable red jogging-trousers",
-                price: 99,
-            },
-            {
-                id: "trousers05",
-                name: "Black Trousers",
-                imgUrl: "images/trousers05.jpg",
-                description: "Comfortable black jogging-trousers",
-                price: 99,
-            },
-            {
-                id: "trousers06",
-                name: "Alternative Black Trousers",
-                imgUrl: "images/trousers06.jpg",
-                description: "Comfortable alternative black jogging-trousers",
-                price: 99,
-            },
-        ],
-        shoes: [
-            {
-                id: "shoes01",
-                name: "Black & White sneakers",
-                imgUrl: "images/shoes01.jpg",
-                description: "Comfortable black & white sneakers",
-                price: 149,
-            },
-            {
-                id: "shoes02",
-                name: "Red & Grey sneakers",
-                imgUrl: "images/shoes02.jpg",
-                description: "Comfortable red & grey sneakers",
-                price: 149,
-            },
-            {
-                id: "shoes03",
-                name: "Blue & Black sneakers",
-                imgUrl: "images/shoes03.jpg",
-                description: "Comfortable blue & black sneakers",
-                price: 149,
-            },
-            {
-                id: "shoes04",
-                name: "Brown & White sneakers",
-                imgUrl: "images/shoes03.jpg",
-                description: "Comfortable brown & white sneakers",
-                price: 149,
-            },
-            {
-                id: "shoes05",
-                name: "Olive & Grey sneakers",
-                imgUrl: "images/shoes05.jpg",
-                description: "Comfortable olive & grey sneakers",
-                price: 149,
-            },
-            {
-                id: "shoes06",
-                name: "Olive sneakers",
-                imgUrl: "images/shoes06.jpg",
-                description: "Comfortable olive sneakers",
-                price: 149,
-            },
-        ],
-
-        init() {
+        url: "https://www2.hs-esslingen.de/~melcher/internet-technologien/webshop/",
+        // categories: [
+        //     { id: "jackets", name: "Jackets", imgUrl: "images/jackets01.jpg" },
+        //     { id: "shirts", name: "Shirts", imgUrl: "images/shirts01.jpg" },
+        //     {
+        //         id: "trousers",
+        //         name: "Trousers",
+        //         imgUrl: "images/trousers01.jpg",
+        //     },
+        //     { id: "shoes", name: "Shoes", imgUrl: "images/shoes01.jpg" },
+        //     { id: "hats", name: "Hats", imgUrl: "images/hats01.jpg" },
+        // ],
+        products: {
+            //     jackets: [
+            //         {
+            //             id: "jackets01",
+            //             name: "Green Jacket",
+            //             imgUrl: "images/jackets01.jpg",
+            //             description: "A green jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //         {
+            //             id: "jackets02",
+            //             name: "Black Jacket",
+            //             imgUrl: "images/jackets02.jpg",
+            //             description: "A black jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //         {
+            //             id: "jackets03",
+            //             name: "Red Jacket",
+            //             imgUrl: "images/jackets03.jpg",
+            //             description: "A red jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //         {
+            //             id: "jackets04",
+            //             name: "Mountain Jacket",
+            //             imgUrl: "images/jackets04.jpg",
+            //             description:
+            //                 "A mountain jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //         {
+            //             id: "jackets05",
+            //             name: "Forest Jacket",
+            //             imgUrl: "images/jackets05.jpg",
+            //             description: "A forest jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //         {
+            //             id: "jackets06",
+            //             name: "Stone Jacket",
+            //             imgUrl: "images/jackets06.jpg",
+            //             description: "A stone jacket woven from the finest yarns",
+            //             price: 199,
+            //         },
+            //     ],
+            //     shirts: [
+            //         {
+            //             id: "shirts01",
+            //             name: "Black Shirt",
+            //             imgUrl: "images/shirts01.jpg",
+            //             description: "A black shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //         {
+            //             id: "shirts02",
+            //             name: "Grey Shirt",
+            //             imgUrl: "images/shirts02.jpg",
+            //             description: "A grey shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //         {
+            //             id: "shirts03",
+            //             name: "Dark Blue Shirt",
+            //             imgUrl: "images/shirts03.jpg",
+            //             description: "A darkblue shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //         {
+            //             id: "shirts04",
+            //             name: "White Shirt",
+            //             imgUrl: "images/shirts04.jpg",
+            //             description: "A white shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //         {
+            //             id: "shirts05",
+            //             name: "Dark Blue Shirt",
+            //             imgUrl: "images/shirts05.jpg",
+            //             description:
+            //                 "A dark blue shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //         {
+            //             id: "shirts06",
+            //             name: "Yellow Shirt",
+            //             imgUrl: "images/shirts06.jpg",
+            //             description: "A yellow shirt woven from the finest yarns",
+            //             price: 49,
+            //         },
+            //     ],
+            //     hats: [
+            //         {
+            //             id: "hats01",
+            //             name: "Darkblue Hat",
+            //             imgUrl: "images/hats01.jpg",
+            //             description: "A cool lookin' darkblue cap",
+            //             price: 19,
+            //         },
+            //         {
+            //             id: "hats02",
+            //             name: "Red & White Hat",
+            //             imgUrl: "images/hats02.jpg",
+            //             description: "A cool lookin' red & white cap",
+            //             price: 19,
+            //         },
+            //         {
+            //             id: "hats03",
+            //             name: "Purple & White Hat",
+            //             imgUrl: "images/hats03.jpg",
+            //             description: "A cool lookin' purple & white cap",
+            //             price: 19,
+            //         },
+            //         {
+            //             id: "hats04",
+            //             name: "Camouflage Hat",
+            //             imgUrl: "images/hats04.jpg",
+            //             description: "A cool lookin' camouflage cap",
+            //             price: 19,
+            //         },
+            //         {
+            //             id: "hats05",
+            //             name: "Black Hat",
+            //             imgUrl: "images/hats05.jpg",
+            //             description: "A cool lookin' black cap",
+            //             price: 19,
+            //         },
+            //         {
+            //             id: "hats06",
+            //             name: "Alternative Black Hat",
+            //             imgUrl: "images/hats06.jpg",
+            //             description: "A cool lookin' alternative black cap",
+            //             price: 19,
+            //         },
+            //     ],
+            //     trousers: [
+            //         {
+            //             id: "trousers01",
+            //             name: "Black Trousers",
+            //             imgUrl: "images/trousers01.jpg",
+            //             description: "Comfortable black jogging-trousers",
+            //             price: 99,
+            //         },
+            //         {
+            //             id: "trousers02",
+            //             name: "Beige Trousers",
+            //             imgUrl: "images/trousers02.jpg",
+            //             description: "Comfortable beige jogging-trousers",
+            //             price: 99,
+            //         },
+            //         {
+            //             id: "trousers03",
+            //             name: "Brown Trousers",
+            //             imgUrl: "images/trousers03.jpg",
+            //             description: "Comfortable brown jogging-trousers",
+            //             price: 99,
+            //         },
+            //         {
+            //             id: "trousers04",
+            //             name: "Red Trousers",
+            //             imgUrl: "images/trousers04.jpg",
+            //             description: "Comfortable red jogging-trousers",
+            //             price: 99,
+            //         },
+            //         {
+            //             id: "trousers05",
+            //             name: "Black Trousers",
+            //             imgUrl: "images/trousers05.jpg",
+            //             description: "Comfortable black jogging-trousers",
+            //             price: 99,
+            //         },
+            //         {
+            //             id: "trousers06",
+            //             name: "Alternative Black Trousers",
+            //             imgUrl: "images/trousers06.jpg",
+            //             description:
+            //                 "Comfortable alternative black jogging-trousers",
+            //             price: 99,
+            //         },
+            //     ],
+            //     shoes: [
+            //         {
+            //             id: "shoes01",
+            //             name: "Black & White sneakers",
+            //             imgUrl: "images/shoes01.jpg",
+            //             description: "Comfortable black & white sneakers",
+            //             price: 149,
+            //         },
+            //         {
+            //             id: "shoes02",
+            //             name: "Red & Grey sneakers",
+            //             imgUrl: "images/shoes02.jpg",
+            //             description: "Comfortable red & grey sneakers",
+            //             price: 149,
+            //         },
+            //         {
+            //             id: "shoes03",
+            //             name: "Blue & Black sneakers",
+            //             imgUrl: "images/shoes03.jpg",
+            //             description: "Comfortable blue & black sneakers",
+            //             price: 149,
+            //         },
+            //         {
+            //             id: "shoes04",
+            //             name: "Brown & White sneakers",
+            //             imgUrl: "images/shoes03.jpg",
+            //             description: "Comfortable brown & white sneakers",
+            //             price: 149,
+            //         },
+            //         {
+            //             id: "shoes05",
+            //             name: "Olive & Grey sneakers",
+            //             imgUrl: "images/shoes05.jpg",
+            //             description: "Comfortable olive & grey sneakers",
+            //             price: 149,
+            //         },
+            //         {
+            //             id: "shoes06",
+            //             name: "Olive sneakers",
+            //             imgUrl: "images/shoes06.jpg",
+            //             description: "Comfortable olive sneakers",
+            //             price: 149,
+            //         },
+            //     ],
+        },
+        categories: null,
+        async init() {
             const body = document.querySelector("body");
 
             body.appendChild(this.generateHeader());
             body.appendChild(this.generateOverview());
             body.appendChild(this.generateFooter());
+            this.generatePlaceHolder();
+            await this.loadCategories();
+
+            this.replaceNav(this.categories);
+            this.replaceOverview(this.categories);
         },
 
         generateHeader() {
             const header = document.createElement("header");
             const limiter = this.createLimiter();
-            const nav = this.createNav(this.categories);
+            const nav = this.createNav(); // null
 
             header.appendChild(limiter);
             limiter.appendChild(
@@ -311,8 +321,10 @@ window.addEventListener("load", () => {
             const ul = document.createElement("ul");
             ul.appendChild(this.createListElement("home", "Home"));
             ul.appendChild(this.createListElement("contact", "Contact"));
-            for (let el of elementList) {
-                ul.appendChild(this.createListElement(el.id, el.name));
+            if (elementList != null) {
+                for (let el of elementList) {
+                    ul.appendChild(this.createListElement(el.id, el.name));
+                }
             }
             nav.appendChild(ul);
 
@@ -334,7 +346,7 @@ window.addEventListener("load", () => {
 
             switch (target) {
                 case "home":
-                    page.generateProducts(main);
+                    page.generateProducts(main, this.categories);
                     break;
                 case "contact":
                     page.generateContact(main);
@@ -349,25 +361,26 @@ window.addEventListener("load", () => {
         renderProducts(categories) {
             const div = document.createElement("div");
             div.classList.add("product-holder");
-            for (let cat of categories) {
-                const divElement = this.createDivElement(
-                    cat.id,
-                    cat.name,
-                    cat.imgUrl
-                );
-                div.appendChild(divElement);
+            if (categories != null) {
+                for (let cat of categories) {
+                    const divElement = this.createDivElement(
+                        cat.id,
+                        cat.name,
+                        cat.imgId
+                    );
+                    div.appendChild(divElement);
+                }
             }
-
             return div;
         },
 
-        createDivElement(id, name, imgUrl) {
+        createDivElement(id, name, imgId) {
             const outerDiv = document.createElement("div");
             const img = document.createElement("img");
             const innerDiv = document.createElement("div");
             const header = this.createH1(name);
             const span = this.createSpan();
-
+            const imgUrl = this.url + `?request=getimage&imageid=${imgId}`;
             header.setAttribute("data-link", id);
             span.setAttribute("data-link", id);
 
@@ -395,7 +408,7 @@ window.addEventListener("load", () => {
             return span;
         },
 
-        generateProducts(m) {
+        generateProducts(m, categories) {
             const main = m;
             const limiter = this.createLimiter();
             const h1 = this.createH1("Products");
@@ -425,15 +438,20 @@ window.addEventListener("load", () => {
             }
         },
 
-        generateProductCategorie(categorieId, categorie) {
+        generateProductCategorie(id, categorie) {
             const limiter = this.createLimiter();
             const heading = this.createH1(categorie);
             const div = document.createElement("div");
             const cat = categorie;
             div.classList.add("product-holder");
 
-            for (let item of this[categorieId]) {
-                div.appendChild(this.generateSingleProduct(item, cat));
+            if (this.products[id] != null) {
+                this.renderSingleProducs(id, div);
+            } else {
+                this.loadCategory(id).then((products) => {
+                    this.products[id] = products;
+                    this.renderSingleProducs(id, div);
+                });
             }
 
             limiter.appendChild(heading);
@@ -441,6 +459,13 @@ window.addEventListener("load", () => {
 
             return limiter;
         },
+
+        renderSingleProducs(id, div) {
+            for (let item of this.products[id]) {
+                div.appendChild(page.generateSingleProduct(item, id));
+            }
+        },
+
         listElementById(list, id) {
             return list.find((item) => {
                 if (item.id == id) {
@@ -474,7 +499,10 @@ window.addEventListener("load", () => {
             singleImg.appendChild(img);
             singleImg.classList.add("single-img");
 
-            img.setAttribute("src", item.imgUrl);
+            img.setAttribute(
+                "src",
+                this.url + "?request=getimage&imageid=" + item.imgId
+            );
             img.setAttribute("alt", item.name);
 
             h2.innerText = item.description;
@@ -506,7 +534,10 @@ window.addEventListener("load", () => {
                 page.productHandler.bind(this, item, id)
             );
 
-            img.setAttribute("src", item.imgUrl);
+            img.setAttribute(
+                "src",
+                this.url + "?request=getimage&imageid=" + item.imgId
+            );
             img.setAttribute("alt", "item");
             img.setAttribute("data-link", item.id);
 
@@ -526,7 +557,43 @@ window.addEventListener("load", () => {
 
             return outerDiv;
         },
-    };
+        async loadCategories() {
+            const response = await fetch(this.url + "?request=getcategories");
+            const { categories } = await response.json();
+            this.categories = categories;
+        },
 
+        replaceNav(categories) {
+            const header = document.querySelector("header>div");
+            const nav = document.querySelector("nav");
+            header.replaceChild(this.createNav(this.categories), nav);
+        },
+        replaceOverview(categories) {
+            const m = document.querySelector("main");
+
+            const div = document.querySelector("main>div");
+            m.removeChild(div);
+            this.generateProducts(m, this.categories);
+        },
+        generatePlaceHolder() {
+            const div = document.querySelector("main>.limiter");
+            const h1 = document.createElement("h1");
+
+            div.innerHTML = "";
+            h1.classList.add("place-holder");
+            h1.textContent = "Waiting for products";
+
+            div.appendChild(h1);
+        },
+        async loadCategory(id) {
+            return fetch(this.url + "?request=getcategory&categoryid=" + id)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((json) => {
+                    return json[id];
+                });
+        },
+    };
     page.init();
 });
