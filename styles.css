@@ -320,3 +320,42 @@ div a {
         transition: transform 0.3s ease;
     }
 }
+
+/**************************************************************/
+
+/*
+If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.
+
+Then we can add overflow: auto; to the containing element to fix this problem:
+*/
+/*Clearfix Hack*/
+.clearfix {
+    overflow: auto;
+}
+
+/*
+The overflow:auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:
+
+Example
+*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+Gradient
+*/
+
+/*
+background-image: repeating-linear-gradient(angle | to side-or-corner, color-stop1, color-stop2, ...);
+Color stops are the colors you want to render smooth transitions among. 
+This value consists of a color value, followed by an optional stop position 
+(a percentage between 0% and 100% or a length along the gradient axis).
+*/
+
+#grad {
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
